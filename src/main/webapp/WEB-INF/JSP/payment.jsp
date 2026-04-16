@@ -21,10 +21,29 @@ body {
 	margin: 0;
 }
 
+/* Back Button Top */
+.top-bar {
+	width: 35%;
+	margin: 30px auto 0;
+}
+
+.back-btn {
+	display: inline-block;
+	padding: 10px 15px;
+	background: #3498db;
+	color: white;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.back-btn:hover {
+	background: #2980b9;
+}
+
 /* Container */
 .container {
 	width: 35%;
-	margin: 80px auto;
+	margin: 20px auto;
 	background: white;
 	padding: 30px;
 	border-radius: 15px;
@@ -76,26 +95,16 @@ h2 {
 .btn:hover {
 	background: #219150;
 }
-
-/* Secondary buttons */
-.link-btn {
-	display: inline-block;
-	margin-top: 15px;
-	padding: 10px 15px;
-	background: #3498db;
-	color: white;
-	text-decoration: none;
-	border-radius: 6px;
-	margin-right: 10px;
-}
-
-.link-btn:hover {
-	background: #2980b9;
-}
 </style>
 
 </head>
 <body>
+
+	<!-- 🔙 Back Button Top -->
+	<div class="top-bar">
+		<a href="javascript:history.back()" class="back-btn">⬅ Back to
+			Form</a>
+	</div>
 
 	<div class="container">
 
@@ -114,12 +123,6 @@ h2 {
 		<form action="confirmBooking" method="post">
 			<button type="submit" class="btn">✅ Confirm Payment</button>
 		</form>
-
-		<!-- 🔙 Navigation Options -->
-		<div>
-			<a href="javascript:history.back()" class="link-btn">⬅ Back to
-				Form</a> <a href="rooms" class="link-btn">🏨 Go to Rooms</a>
-		</div>
 
 	</div>
 
